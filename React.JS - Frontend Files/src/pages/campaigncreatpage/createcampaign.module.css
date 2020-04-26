@@ -1,0 +1,39 @@
+.description{
+    height: 15vh;
+    background:linear-gradient(to left,cornflowerblue, rgb(32, 77, 160));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptiontext{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.createpic{
+    background-image: url('../../create2.gif');
+    background-size: cover;
+    border: 4px solid rgb(201, 199, 199);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .descriptiontext{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .text{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .createpic{
+        display: none;
+    }
+}

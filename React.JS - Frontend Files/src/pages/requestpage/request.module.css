@@ -1,0 +1,36 @@
+.cardwrapper{
+    box-shadow: 1px 1px 3px grey;
+}
+
+.card{
+    box-shadow: 1px 1px 3px grey;
+    margin-top: 10px;
+}
+
+.head{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.cardhead{
+    color: rgba(0,0,0,.6);
+    background-color: #e0e1e2;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cardbody{
+    color: rgba(0,0,0,.6);
+    font-size: 16px;
+    font-weight: 700;
+    border-left: 5px solid rgb(56, 116, 226) !important;
+}
+
+.cardbodygreen{
+    border-left: 5px solid rgba(6, 161, 58, 0.815) !important;
+}
+
+.cardbodyred{
+    border-left: 5px solid rgb(235, 11, 11) !important;
+}

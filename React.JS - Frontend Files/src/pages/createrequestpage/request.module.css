@@ -1,0 +1,50 @@
+.description{
+    height: 15vh;
+    background:linear-gradient(to left,cornflowerblue, rgb(32, 77, 160));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionText{
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 1px 1px 3px grey;
+}
+
+.head{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.side{
+    background-image: url("../../request.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .contribute{
+        margin-top: 70vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carddesc{
+        margin-top: 22px;
+    }
+
+    .cardItem{
+        box-shadow: 1px 1px 3px grey;
+        width: 80vw;
+    }
+    
+  }

@@ -1,0 +1,49 @@
+.wrapper {
+    background: #ff5e63; 
+    font-family: "Varela Round", sans-serif;
+    background: linear-gradient(to bottom,#82a5f1, #322ef5)  no-repeat;
+    height: 100vh;
+    width: 100wh;
+}
+
+.formwrapper{
+  border-radius: 5px;
+    background-color: white;
+    margin-top: 200px;
+    box-shadow: 1px 1px 2px black;
+}
+
+.field{
+  box-shadow: 1px 1px 1px grey;
+  border-radius: 5px;
+}
+
+.loginbutton{
+  background-color: #ec5252;
+  padding:8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  color: white;
+}
+
+.forgetpassword{
+  background-color: transparent;
+  border: none;
+  color: grey;
+  font-weight: 700;
+}
+
+.paraErrorNoDisplay{
+  display: none;
+  color: red;
+  font-weight: 500;
+
+}
+
+.paraErrorDisplay{
+  display: none;
+  color: red;
+  font-weight: 500;
+
+}

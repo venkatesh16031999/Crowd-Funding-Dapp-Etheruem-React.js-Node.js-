@@ -1,0 +1,39 @@
+.wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5bbe72;
+}
+
+.but{
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    color: white;
+    font-weight: 700;
+}
+
+.para{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.but:hover{
+
+color: black;
+
+}
+
+.off{
+    height: 0vh;
+}
+
+@media only screen and (max-width: 600px) {
+    
+   .wrapper{
+      height: 0vh;
+    }
+  }
+
