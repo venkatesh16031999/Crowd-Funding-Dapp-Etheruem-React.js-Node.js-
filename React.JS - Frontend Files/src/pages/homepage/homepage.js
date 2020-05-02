@@ -13,10 +13,11 @@ import {
   Responsive,
   Segment,
   Sidebar,
+  Embed,
   Visibility,
 } from 'semantic-ui-react'
 import styles from './homepage.module.css'
-import Homeimage from '../../homepic.jpg';
+import Homeimage from '../../80910.jpg';
 import Crowdfunding from '../../crowdfunding.png';
 import Crowdfunding2 from '../../crowdfunding2.png';
 import Crowdfunding3 from '../../crowdfunding3.png';
@@ -42,6 +43,25 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
    
+   <div>
+   <svg viewBox="0 0 1300 150">
+  <symbol id="s-text">
+    <text text-anchor="middle" x="50%" y="80%">CROWD FUNDING</text>
+  </symbol>
+
+  <g class="g-ants">
+    <use xlinkHref="#s-text" className={styles.textcopy}></use>
+    <use xlinkHref="#s-text" className={styles.textcopy}></use>
+    <use xlinkHref="#s-text" className={styles.textcopy}></use>
+    <use xlinkHref="#s-text" className={styles.textcopy}></use>
+    <use xlinkHref="#s-text" className={styles.textcopy}></use>
+    <use xlinkHref="#s-text" className={styles.textcopy}></use>
+    <use xlinkHref="#s-text" className={styles.textcopy}></use>
+    <use  class="text-copy"></use>
+  </g>
+</svg>
+   </div>
+
    <Link to="/campaign">
    <button primary size='huge' className={styles.homebutton}>
       Go To Campaign &nbsp;
@@ -66,11 +86,15 @@ class DesktopContainer extends Component {
     const { fixed } = this.state
 
     return (
-      <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth} >
+      <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}
+      style={{backgroundImage:"url('https://us.123rf.com/450wm/lumitar/lumitar1802/lumitar180200029/95008638-seamless-watercolor-paper-texture-vintage-craft-background.jpg?ver=6')"}}
+      >
         <Visibility className="home"
             style={{
             backgroundImage: "url("+ Homeimage +")",
             backgroundSize: 'cover',
+            backgroundPosition:"center",
+            clipPath: "polygon(50% 0%, 100% 0, 100% 35%, 100% 87%, 85% 95%, 50% 100%, 15% 95%, 0 87%, 0% 35%, 0 1%)"
             }}
           once={false}
           onBottomPassed={this.showFixedMenu}
@@ -166,9 +190,9 @@ class MobileContainer extends Component {
           
         <Visibility className="home"
             style={{
-            backgroundImage: "url("+ Homeimage +")",
-            backgroundSize: 'cover',
-            // backgroundPosition:'center',
+              backgroundImage: "url("+ Homeimage +")",
+              backgroundSize: 'cover',
+              backgroundPosition:"center"
             }}
           once={false}
           onBottomPassed={this.showFixedMenu}
@@ -228,8 +252,10 @@ ResponsiveContainer.propTypes = {
 }
 
 const HomepageLayout = () => (
-  <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+  <ResponsiveContainer
+  
+  >
+    <Segment style={{ padding: '8em 0em' }} vertical style={{backgroundImage:"url('https://us.123rf.com/450wm/lumitar/lumitar1802/lumitar180200029/95008638-seamless-watercolor-paper-texture-vintage-craft-background.jpg?ver=6')"}}>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -293,6 +319,11 @@ const HomepageLayout = () => (
           </Grid.Column>
         </Grid.Row>
       </Grid>
+    </Segment>
+    <br />
+    <Segment style={{ padding: '4em 0em' }} vertical>
+
+      
     </Segment>
 
     <Segment style={{ padding: '8em 0em' }} vertical>

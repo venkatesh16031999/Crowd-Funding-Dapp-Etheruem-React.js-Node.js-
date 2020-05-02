@@ -32,6 +32,8 @@ app.use(multer({storage:storage}).single('image'));
 
 const userRoute=require('./routes/user');
 
+const discussRoute=require('./routes/discuss');
+
 const PORT=process.env.PORT || 3001;
 
 app.use(cors());
@@ -39,11 +41,20 @@ app.use(cors());
 app.use(express.json());
 
 app.use(userRoute);
+app.use(discussRoute);
 
-app.listen(PORT,(err)=>{
+const server=app.listen(PORT,(err)=>{
     if(err){
         console.log(err.message);
     }
     console.log("Server Connect to port :",PORT);
+})
+
+const socket= require('./middleware/socket').init(server);
+
+socket.on('connection', soc=>{
+
+  console.log("client connected");
+
 })
 

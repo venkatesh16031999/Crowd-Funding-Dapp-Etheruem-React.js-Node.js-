@@ -1,0 +1,32 @@
+.description{
+    height: 10vh;
+    background:linear-gradient(to left,cornflowerblue, rgb(32, 77, 160));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionText{
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 1px 1px 2px grey;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 6px grey;
+}
+
+.post{
+    border: none !important;
+    margin-top: 10px;
+    padding: 10px;
+}

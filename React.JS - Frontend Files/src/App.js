@@ -28,7 +28,7 @@ class App extends Component{
     return (
       <div>
         <Switch>
-          <Route path="/resetpassword/:token"  component={ResetPassword} />
+        <Route path="/resetpassword/:token"  component={ResetPassword} />
         <Route path="/forgetpassword"  component={ ForgetPassword} />
           <Route path="/register"  component={Register} />
           <Route path="/login"  component={Login} />

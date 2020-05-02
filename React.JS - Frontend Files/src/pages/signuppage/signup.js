@@ -76,7 +76,7 @@ class Signup extends Component{
                             </Form.Field>
                             <p className={styles.paraErrorNoDisplay}>Email is Required</p>
                             <Form.Field className={styles.field}>
-                            <Input icon='keyboard' iconPosition='left' placeholder='Password' onChange={(event)=>{ this.setState({password:event.target.value}) }} />
+                            <Input icon='keyboard' iconPosition='left' type="password" placeholder='Password' onChange={(event)=>{ this.setState({password:event.target.value}) }} />
                             </Form.Field>
                             <p className={styles.paraErrorNoDisplay}>Email is Required</p>
                             </Form>

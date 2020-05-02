@@ -8,13 +8,14 @@ import CampaigCreate from '../campaigncreatpage/campaignCreate';
 import Campaignview from '../viewcampaignpage/viewcampaign';
 import Campaignrequest from '../requestpage/request';
 import Requestpage from '../createrequestpage/creatrequest';
-
+import Chat from '../discussionpage/discuss';
 
 class Main extends Component{
     render(){
         return (
             <Layout >
             <Switch>
+                <Route path="/campaign/view/:address/discussions" component={Chat} />
                 <Route path="/campaign/view/:address/createrequest" component={Requestpage} />
                 <Route path="/campaign/view/:address/request" component={Campaignrequest} />
                 <Route path="/campaign/view/:address" component={Campaignview} />

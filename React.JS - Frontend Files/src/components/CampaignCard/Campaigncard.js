@@ -40,7 +40,7 @@ class Campaigncard extends Component{
                cards=this.props.contract.contracts.map(data=>{
             return (
                 <Col md={3} xs={12}  className={styles.center}>
-                        <Card className="justify-content-center">
+                        <Card className={styles.card}>
                         <div>
                         <Image src={`https://ipfs.io/ipfs/${data.imageHash}`} style={{height:"250px",width:"100%"}} />
                         </div>

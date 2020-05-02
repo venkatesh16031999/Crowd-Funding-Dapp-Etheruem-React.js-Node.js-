@@ -72,6 +72,7 @@ class Requestpage extends Component{
                             <Card.Body className={styles.head}>
                                <Row className="justify-content-center">
                                    <Col md={6}>
+                                       <br/>
                                    <p>Create Requests</p>
                                     <hr />
                                     <Form>
@@ -101,11 +102,13 @@ class Requestpage extends Component{
                                     </Message> : null }
 
                                     </Form>
+                                    <br/>
                                    </Col>
                                    <Col md={5} className={styles.side}>
 
                                    </Col>
                                </Row>
+
                             </Card.Body>
                         </Card>
                         </Col>

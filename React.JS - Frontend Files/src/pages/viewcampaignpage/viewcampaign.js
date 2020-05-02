@@ -210,7 +210,16 @@ class Viewpage extends Component{
 
                                 <Col md={12}>
                                 
-                                <p className={styles.heading}>Contribute To This Campaign</p>
+                                <Row>
+                                    <Col md={10}>
+                                    <p className={styles.heading}>Contribute To This Campaign</p>
+                                    </Col>
+                                    <Col md={2}>
+                                    <Link to={`/campaign/view/${this.props.match.params.address.split("&")[0]}/discussions`}>
+                                    <Button color="green" type='button'>Discussion</Button>
+                                    </Link>
+                                    </Col>
+                                </Row>
                             <hr />
                             <Bcard className={styles.bcard}>
                             <Bcard.Body>

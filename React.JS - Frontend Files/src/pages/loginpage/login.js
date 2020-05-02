@@ -67,6 +67,7 @@ render(){
                             <Input icon='keyboard' 
                             iconPosition='left' 
                             placeholder='Password'
+                            type="password"
                             onChange={event=>this.setState({password:event.target.value})}
                             />
                             </Form.Field>

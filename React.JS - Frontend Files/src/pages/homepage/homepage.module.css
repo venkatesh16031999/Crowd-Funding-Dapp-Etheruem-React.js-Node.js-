@@ -5,13 +5,65 @@
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: white;
+    background-color: transparent;
     border: 2px solid white;
     font-weight: 900;
-    color: rgb(73, 70, 70)
+    color:white
 }
 
 .homebutton:hover{
     background-color: rgb(228, 225, 225);
     border: 2px solid rgb(228, 225, 225);
+    color: black;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+svg {
+    display: block;
+    font: 8.5em 'Montserrat';
+    font-weight: 500;
+    /* width: 960px;
+    height: 300px; */
+    margin: 0 auto;
+}
+
+.textcopy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.textcopy:nth-child(1){
+	stroke: white;
+	animation-delay: -1;
+}
+
+.textcopy:nth-child(2){
+	stroke: white;
+	animation-delay: -2s;
+}
+
+.textcopy:nth-child(3){
+	stroke: white;
+	animation-delay: -3s;
+}
+
+.textcopy:nth-child(4){
+	stroke: white;
+	animation-delay: -4s;
+}
+
+.textcopy:nth-child(5){
+	stroke: white;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
 }

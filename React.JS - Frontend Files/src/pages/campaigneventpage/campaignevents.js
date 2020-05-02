@@ -35,6 +35,7 @@ class Campaignevent extends Component{
                         &nbsp;
                     </Col>
                     <Col className={styles.descriptionsection} md={4} xs={12}>
+                        <h2 className={styles.headtop}>Instructions</h2>
                         <br />
                         <p className={styles.instructions}>Step 1: Choose the best Campaign.</p>
                         <p className={styles.instructions}>Step 2: Verify the Campaign.</p>

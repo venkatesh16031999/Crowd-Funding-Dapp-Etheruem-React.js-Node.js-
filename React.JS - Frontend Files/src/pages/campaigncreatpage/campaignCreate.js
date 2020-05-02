@@ -13,6 +13,8 @@ import * as actions from '../../store/actions/index';
 
 import ipfs from '../../IPFS/ipfs';
 
+import axios from '../../axios';
+
 
 class CampaignCreate extends Component {
 
@@ -90,7 +92,16 @@ class CampaignCreate extends Component {
         
                 this.props.updateContract(data);
         
+                const dataDiscuss={
+                    contractAddress:contractAddressAfterDeployed.contractAddress
+                }
                
+                axios.post('/initialDiscussCreate',dataDiscuss).then(res=>{
+                    console.log(res.data);
+                }).catch(e=>{
+                    console.log(e.message);
+                })
+
         
                 this.props.history.push('/campaign');
     
@@ -188,7 +199,7 @@ class CampaignCreate extends Component {
                     </Card>
                     </Col>
                 </Row>
-              
+              <br/><br/>
 
             </React.Fragment>
         );

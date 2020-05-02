@@ -2,22 +2,27 @@
 
     background-image: url('../../home1.jpg');
     background-size: cover;
-    background-position: center;
-    height: 30vh;
+    background-position: left;
+    height: 60vh;
 }
 
 .descriptionsection{
-    background-color: #0a1225;
-    height: 30vh;
+    background-color: #f13e3e;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    /* align-items: center; */
+}
+
+.headtop{
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
 }
 
 .instructions{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     color: white;
 }
@@ -49,9 +54,16 @@
 
 @media only screen and (max-width: 600px) {
     
+    .headtop{
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+    }
+
     .descriptionsection{
-        background-color: #0a1225;
-        height: 35vh;
+        background-color: #f13e3e;
+        height: 40vh;
         display: block;
     }
     
