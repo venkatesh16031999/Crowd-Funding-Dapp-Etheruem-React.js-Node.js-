@@ -4,7 +4,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 
 const instance = axios.create({
-    baseURL: 'http://localhost:3001'
+    baseURL: 'https://crowdfunding-dapp-backend.herokuapp.com/'
   });
 
 

@@ -6,7 +6,6 @@ const multer=require('multer');
 const path=require('path');
 
 const imagePath=path.join(__dirname,"/images");
-
 app.use("/images",express.static(imagePath));
 
 var storage = multer.diskStorage({

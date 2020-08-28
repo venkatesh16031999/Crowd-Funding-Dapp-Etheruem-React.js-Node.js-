@@ -197,6 +197,7 @@ exports.getUserDataOnLogin=async (req,res)=>{
 }
 
 exports.userSignUp= async (req,res)=>{
+
     const { name,email,number,password }=req.body;
     console.log(name);
     const data={
@@ -226,6 +227,7 @@ exports.userSignUp= async (req,res)=>{
             userDetail:details,
             userAuth:authdata
         }
+
         res.status(200).send({combineddata});
     }catch(e){
         res.status(200).json({
@@ -247,7 +249,7 @@ exports.userSignIn=async (req,res)=>{
 
                     const userData=await userDetail.findOne({email:email});
 
-                    const token=jwt.sign({
+                    const token=jwt.sign({      
                         userId:userData._id.toString(),
                         email:userData.email
                     },'crowdfundingjwttokensafetymechanism',{expiresIn:'1h'});

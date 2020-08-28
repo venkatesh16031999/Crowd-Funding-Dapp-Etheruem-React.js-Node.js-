@@ -76,7 +76,7 @@ class Profile extends Component{
                         <Row className="justify-content-center">
                             <Col md={12} xs={12} className="justify-content-center text-center">
                                 <div  className=" d-flex justify-content-center text-center">
-                                <Image style={{width:"150px",height:"150px"}} src={"http://localhost:3001/"+this.props.image} size="small" />
+                                <Image style={{width:"150px",height:"150px"}} src={"https://crowdfunding-dapp-backend.herokuapp.com/"+this.props.image} size="small" />
                                 </div>
                             </Col>
                             

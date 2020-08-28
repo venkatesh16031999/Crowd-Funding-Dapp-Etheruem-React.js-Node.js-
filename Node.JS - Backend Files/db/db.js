@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-const db=mongoose.connect("mongodb://127.0.0.1:27017/crowd-funding",{
+const db=mongoose.connect( process.env.MONGODB_URI || "mongodb://mongodb/crowd-funding",{
     useNewUrlParser:true,
     useFindAndModify:false,
     useCreateIndex:true
@@ -10,4 +10,4 @@ const db=mongoose.connect("mongodb://127.0.0.1:27017/crowd-funding",{
     console.log(e.message);
 });
 
-module.exports=db;
+module.exports=db;s
